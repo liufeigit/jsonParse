@@ -1,4 +1,4 @@
-#jsonParse
+# jsonParse
 A simple and fast JSON parser in ANSI C.
 
 * [Overview](#overview)
@@ -31,7 +31,7 @@ You can copy source `parse.c` and `object.c`,header `parse.h` and `object.h` to 
 
 `jsonParse` is written in ANSI C in order to support as many platforms and compilers as possible.
 
-#####compile
+##### compile
 Use clang or gcc compile share or static library.
 
 for clang example
@@ -45,13 +45,13 @@ $ clang -c parse.c object.c
 $ ar -r libjsonParse.a parse.o object.o
 ```
 
-###Usage
+### Usage
 --
-#####Include jsonParse
+##### Include jsonParse
 ```c
 #include <parse.h>
 ```
-#####Parse JSON 
+##### Parse JSON 
 ```c
 int parseJSON(char *str,int *flag,Object **data);
 ```
@@ -72,17 +72,17 @@ int parseJSON(char *str,int *flag,Object **data);
 > 
 > 
 
-#####Print JSON
+##### Print JSON
 ```c
 char *object_toString(Object *object);
 ```
-#####Free object
+##### Free object
 ```c
 void object_free(Object *object);
 ```
 
 
-#####Data Structure
+##### Data Structure
 `jsonParse` represents JSON data using the `object` struct :
 
 ```c
@@ -131,7 +131,7 @@ An item of this type represents a JSON value.
 
 `Array/Dict` use  `object struct ` **data** field as **Array/Dict struct**.
 
-###Example
+### Example
 simple data as
 
 ```c
@@ -168,7 +168,7 @@ test demo
 
 `testStr.c ` is demo example, usage **parse/print/free**
 
-###License
+### License
 MIT License
 > Copyright (c) 2019 liufei and jsonParse contributors
 >
@@ -191,7 +191,7 @@ MIT License
 >  THE SOFTWARE.
 
 
-###Enjoy jsonParse
+### Enjoy jsonParse
   It's not perfect, it's just the beginning.
 
   Welcome to contribute to improve the code.
