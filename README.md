@@ -1,4 +1,5 @@
 # jsonParse
+---
 A simple and fast JSON parser in ANSI C.
 
 * [Overview](#overview)
@@ -17,7 +18,7 @@ A simple and fast JSON parser in ANSI C.
 
 
 ### Overview
---
+---
 
 `jsonParse` implements a reference counting object model that  easily construct JSON objects in C.
 
@@ -26,7 +27,7 @@ A simple and fast JSON parser in ANSI C.
 `jsonParse` is simple ,only 1600+ lines code.
 
 ### Build 
---
+---
 ##### copying the source
 You can copy source `parse.c` and `object.c`,header `parse.h` and `object.h` to your projects source and start using it.
 
@@ -47,7 +48,7 @@ $ ar -r libjsonParse.a parse.o object.o
 ```
 
 ### Usage
---
+---
 ##### Include jsonParse
 ```c
 #include <parse.h>
@@ -133,6 +134,7 @@ An item of this type represents a JSON value.
 `Array/Dict` use  `object struct ` **data** field as **Array/Dict struct**.
 
 ### Example
+---
 simple data as
 
 ```c
@@ -170,6 +172,7 @@ test demo
 `testStr.c ` is demo example, usage **parse/print/free**
 
 ### License
+---
 MIT License
 > Copyright (c) 2019 liufei and jsonParse contributors
 >
@@ -193,6 +196,7 @@ MIT License
 
 
 ### Enjoy jsonParse
+---
   It's not perfect, it's just the beginning.
 
   Welcome to contribute to improve the code.
