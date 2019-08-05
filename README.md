@@ -18,6 +18,7 @@ A simple and fast JSON parser in ANSI C.
 
 ### Overview
 --
+
 `jsonParse` implements a reference counting object model that  easily construct JSON objects in C.
 
 `jsonParse` is faster than [cJSON](https://github.com/DaveGamble/cJSON) and [json-c](https://github.com/json-c/json-c) as implements in C.
@@ -26,7 +27,7 @@ A simple and fast JSON parser in ANSI C.
 
 ### Build 
 --
-#####copying the source
+##### copying the source
 You can copy source `parse.c` and `object.c`,header `parse.h` and `object.h` to your projects source and start using it.
 
 `jsonParse` is written in ANSI C in order to support as many platforms and compilers as possible.
