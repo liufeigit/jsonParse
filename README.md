@@ -158,7 +158,7 @@ usage as
 	}
 	
 	// free 
-	free(str2);
+	free(printStr);
 	object_free(obj);
 
 ```
