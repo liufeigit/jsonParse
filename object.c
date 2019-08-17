@@ -646,7 +646,8 @@ char *__toIntString(int i){
 char *__toFloatString(double d){
 	char *str=NULL;
 
-	str=(char *)calloc(30, sizeof(char ));
+	// gcvt apple bug!!! - --> "-.\0"+3
+	str=(char *)calloc(30+3, sizeof(char ));
 	gcvt(d, 30, str);
 
 	return str;
